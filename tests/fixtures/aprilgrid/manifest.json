@@ -1,0 +1,70 @@
+{
+  "source_session": "output/aprilgrid/20261016-124746-282111",
+  "note": "Original JPEG payloads from Rerun, no re-encoding. No ground-truth real poses.",
+  "pdf": {
+    "filename": "calib.io_KALIBR_500x500_6x6_55.pdf",
+    "sha256": "eaa8617bf3b0d058c87d15ee51a83a9a7dfb22dc603199f29f0a921335d41d12",
+    "render": "calib_io_500x500_6x6_55.png",
+    "page_size_m": [
+      0.5,
+      0.5
+    ]
+  },
+  "frames": [
+    {
+      "frame": 548,
+      "time_s": 18.230305496021174,
+      "status": "stereo"
+    },
+    {
+      "frame": 617,
+      "time_s": 20.53021372796502,
+      "status": "inconsistent_geometry"
+    },
+    {
+      "frame": 972,
+      "time_s": 32.363595689996146,
+      "status": "inconsistent_geometry"
+    },
+    {
+      "frame": 1555,
+      "time_s": 51.797102084965445,
+      "status": "inconsistent_geometry"
+    },
+    {
+      "frame": 2322,
+      "time_s": 77.36375948600471,
+      "status": "mono"
+    },
+    {
+      "frame": 2468,
+      "time_s": 82.23086982499808,
+      "status": "stereo"
+    }
+  ],
+  "calibration": "calibration.yaml",
+  "target": "target.yaml",
+  "regression_note": "Real images test acceptance and residual gates, not absolute accuracy. PDF synthetic warps provide known geometric truth.",
+  "temporal_sequence": [
+    {
+      "frame": 972,
+      "time_s": 32.363595689996146
+    },
+    {
+      "frame": 974,
+      "time_s": 32.43026752001606
+    },
+    {
+      "frame": 976,
+      "time_s": 32.49706543702632
+    },
+    {
+      "frame": 978,
+      "time_s": 32.56371825595852
+    },
+    {
+      "frame": 980,
+      "time_s": 32.63028936996125
+    }
+  ]
+}

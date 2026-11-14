@@ -1,0 +1,21 @@
+camera: ../cameras/s200032/camera.yaml
+orb_source: ../third_party/orb_slam3
+vocabulary: ../vocabulary/ORBvoc.txt
+fps: 15
+features: 1600
+max_imu_gap: 0.05
+depth:
+  width: 640
+  height: 512
+  hfov_deg: 100
+  min_m: 0.3
+  max_m: 3.0
+  num_disparities: 128
+  block_size: 5
+  lr_threshold: 1.5
+  sample_stride: 2
+  voxel_m: 0.008
+  max_live_keyframes: 100
+viewer:
+  memory_limit: 1GiB
+  point_radius_px: 0.65

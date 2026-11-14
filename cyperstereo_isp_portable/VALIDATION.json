@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-16",
+  "platform": "Linux x86_64",
+  "compiler": "GCC 11.4.0",
+  "opencv": "4.5.4 (system)",
+  "native_optimization": false,
+  "ctest_passed": [
+    "isp",
+    "parameters",
+    "transport",
+    "c_abi",
+    "python_abi"
+  ],
+  "python_unittest_cases": 6,
+  "installed_consumers": [
+    "C with CyperStereo::c_api",
+    "C++ with CyperStereo::isp"
+  ],
+  "shared_library_exports": [
+    "cisp_api_version",
+    "cisp_last_error",
+    "cisp_create",
+    "cisp_destroy",
+    "cisp_load_config",
+    "cisp_reset",
+    "cisp_process_transport"
+  ],
+  "real_frame_comparison": {
+    "input_source": "S200032 tuner snapshot 20261016-073834483-OHplKi; hardware2/firmware6",
+    "method": "Same full RAW pair; manual RGB gains fixed to snapshot actual_white_balance_rgb to reproduce temporal AWB state. C++ and Python outputs compared against saved tuner PNG.",
+    "cpp": [
+      {
+        "eye": 1,
+        "shape": [
+          1024,
+          1280,
+          3
+        ],
+        "max_absolute_error": 0,
+        "mean_absolute_error": 0.0,
+        "different_channel_values": 0
+      },
+      {
+        "eye": 2,
+        "shape": [
+          1024,
+          1280,
+          3
+        ],
+        "max_absolute_error": 0,
+        "mean_absolute_error": 0.0,
+        "different_channel_values": 0
+      }
+    ],
+    "python_equal_to_tuner": [
+      true,
+      true
+    ]
+  },
+  "hardware_capture_performed": false
+}

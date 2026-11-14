@@ -1,0 +1,392 @@
+{
+  "source_root": "/home/taoqiu/CyperstereoSDK",
+  "note": "Source hashes describe local file snapshots, including untracked camera_tuner work. Output hashes describe this portable extraction; no original checkout is required at build/runtime.",
+  "files": [
+    {
+      "source": "camera_tuner/src/model.h",
+      "copy": "include/camera_tuner/model.h",
+      "source_sha256": "d924fc917c82e5357abd81e59245ba2e8c3feb70aecc057f7aa452ddee604af4",
+      "package_sha256": "4d7900f663ff4ffbee47be893caab6940371c43ead76d1c592e8adbff197ede5",
+      "modification": "Removed GUI-only saveSnapshot declaration; data types and processing parameters unchanged."
+    },
+    {
+      "source": "camera_tuner/src/tunable_isp.h",
+      "copy": "include/camera_tuner/tunable_isp.h",
+      "source_sha256": "1076eb9864943d5734783a0b9f71b6d3ea3bc624a97da364d4e51dc2dcd92085",
+      "package_sha256": "eaa9c8f8be7a7c3973e42d6f7ebf2fb92ff865c70ca02d15818d18fea036598f",
+      "modification": "Jetson display-only CPU/CUDA extension; original default CPU processing preserved."
+    },
+    {
+      "source": "camera_tuner/src/tunable_isp.cpp",
+      "copy": "src/tunable_isp.cpp",
+      "source_sha256": "9e0e6093654b356988262f643d78090ac5f2d31cad529c3eac27063ba15c8857",
+      "package_sha256": "49e945678d1bce82604caf9ac47fe06722796ba8b382ddc327075c9f0828ef68",
+      "modification": "Jetson display-only CPU/CUDA extension; original default CPU processing preserved."
+    },
+    {
+      "source": "camera_tuner/src/isp_frame_storage.cpp",
+      "copy": "src/isp_frame_storage.cpp",
+      "source_sha256": "011b0f649061e702e3f564d76e01aa6deae89386d9d517e8df14c8cfc2d53291",
+      "package_sha256": "011b0f649061e702e3f564d76e01aa6deae89386d9d517e8df14c8cfc2d53291",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "camera_tuner/configs/s200032.yaml",
+      "copy": "configs/s200032.yaml",
+      "source_sha256": "6cb885efb1d0ebd07ea15f00965018e5eb3330eafa621252f5b7a286f12f412b",
+      "package_sha256": "6cb885efb1d0ebd07ea15f00965018e5eb3330eafa621252f5b7a286f12f412b",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "camera_tuner/tests/test_isp.cpp",
+      "copy": "tests/test_isp.cpp",
+      "source_sha256": "593a2857921284cd3cfffebdf8a3413fbf36b04d40904aa417f33d6d8503658b",
+      "package_sha256": "593a2857921284cd3cfffebdf8a3413fbf36b04d40904aa417f33d6d8503658b",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/include/modules/modules.h",
+      "copy": "vendor/isp/include/modules/modules.h",
+      "source_sha256": "78311b168f4ba2cf1eb840133f5d11a5e35095852977df54ac7b060c7ef0bd80",
+      "package_sha256": "78311b168f4ba2cf1eb840133f5d11a5e35095852977df54ac7b060c7ef0bd80",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/include/common/frame.h",
+      "copy": "vendor/isp/include/common/frame.h",
+      "source_sha256": "968bbe53a2d5fc9fae83aa54832b71b75c8f38345408afad71476e53c440d1d9",
+      "package_sha256": "968bbe53a2d5fc9fae83aa54832b71b75c8f38345408afad71476e53c440d1d9",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/include/common/pipeline.h",
+      "copy": "vendor/isp/include/common/pipeline.h",
+      "source_sha256": "a7bdf8fa41f05432311a0da90aae5420c09b9eca854a71f74a943c02cf6eea4c",
+      "package_sha256": "a7bdf8fa41f05432311a0da90aae5420c09b9eca854a71f74a943c02cf6eea4c",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/include/common/common.h",
+      "copy": "vendor/isp/include/common/common.h",
+      "source_sha256": "fa74efd08e964ffb7979ca726c622bc0db67ff5d232ae9d749c1d44a83019f23",
+      "package_sha256": "fa74efd08e964ffb7979ca726c622bc0db67ff5d232ae9d749c1d44a83019f23",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/include/common/types.h",
+      "copy": "vendor/isp/include/common/types.h",
+      "source_sha256": "2c75fdbc3665897695deba0f903b1f1dd19d08c7bd09a84624e2f4c270011989",
+      "package_sha256": "2c75fdbc3665897695deba0f903b1f1dd19d08c7bd09a84624e2f4c270011989",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/lsc.cpp",
+      "copy": "vendor/isp/sources/modules/lsc.cpp",
+      "source_sha256": "f7f2148b6a7c7c6cfac6b43b0ea8a7e4f5e200ed8f3988eb77b9c8479b7bf73a",
+      "package_sha256": "f7f2148b6a7c7c6cfac6b43b0ea8a7e4f5e200ed8f3988eb77b9c8479b7bf73a",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/yuv2rgb.cpp",
+      "copy": "vendor/isp/sources/modules/yuv2rgb.cpp",
+      "source_sha256": "cab575a8ac32787606bd52f32b2e02ac68c44d98b7b43c3d3265750275e07bb8",
+      "package_sha256": "cab575a8ac32787606bd52f32b2e02ac68c44d98b7b43c3d3265750275e07bb8",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/wbgain.cpp",
+      "copy": "vendor/isp/sources/modules/wbgain.cpp",
+      "source_sha256": "fb6dabb6812728803a09e7e3ac121a7243148108714362a5b3a69a826a6304b2",
+      "package_sha256": "fb6dabb6812728803a09e7e3ac121a7243148108714362a5b3a69a826a6304b2",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/unpack.cpp",
+      "copy": "vendor/isp/sources/modules/unpack.cpp",
+      "source_sha256": "92fd962e821de8027dfebae6f3c045cd6dfea51aec4ee981c654210254d009d0",
+      "package_sha256": "92fd962e821de8027dfebae6f3c045cd6dfea51aec4ee981c654210254d009d0",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/cns.cpp",
+      "copy": "vendor/isp/sources/modules/cns.cpp",
+      "source_sha256": "9fa253dc9ac06e21ca0a0e86613c05bdf338d8357e8c9467fb5e688d525a6290",
+      "package_sha256": "9fa253dc9ac06e21ca0a0e86613c05bdf338d8357e8c9467fb5e688d525a6290",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/clipout.cpp",
+      "copy": "vendor/isp/sources/modules/clipout.cpp",
+      "source_sha256": "fa600fbcfda05a72d7825be40da1cf4fdbc6d9e9bca8a5991f73ca53aec5f3cd",
+      "package_sha256": "fa600fbcfda05a72d7825be40da1cf4fdbc6d9e9bca8a5991f73ca53aec5f3cd",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/rgb2yuv.cpp",
+      "copy": "vendor/isp/sources/modules/rgb2yuv.cpp",
+      "source_sha256": "a0d39c6567762a2dcc581717c78b9e3529f36649b4f9cc5d4ff9f94d78592836",
+      "package_sha256": "a0d39c6567762a2dcc581717c78b9e3529f36649b4f9cc5d4ff9f94d78592836",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/rgbgamma.cpp",
+      "copy": "vendor/isp/sources/modules/rgbgamma.cpp",
+      "source_sha256": "cf04d53104abdb78576b7356570d51437b4fe631241aade832e43e0a271d6947",
+      "package_sha256": "cf04d53104abdb78576b7356570d51437b4fe631241aade832e43e0a271d6947",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/ltm.cpp",
+      "copy": "vendor/isp/sources/modules/ltm.cpp",
+      "source_sha256": "bee86262fb6abbfcc27344a0a4ffd0ab861ab195f20901b75a0f794037cb7219",
+      "package_sha256": "bee86262fb6abbfcc27344a0a4ffd0ab861ab195f20901b75a0f794037cb7219",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/blc.cpp",
+      "copy": "vendor/isp/sources/modules/blc.cpp",
+      "source_sha256": "29a27eebacc40ecdb3ba811d4b5011a82ed8c2c12183a7136d1c27e18b129343",
+      "package_sha256": "29a27eebacc40ecdb3ba811d4b5011a82ed8c2c12183a7136d1c27e18b129343",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/depwl.cpp",
+      "copy": "vendor/isp/sources/modules/depwl.cpp",
+      "source_sha256": "864fde92ddef1d47da3a7435a260ce17eb3eac8a0bec789aa681377cfc5bdb1b",
+      "package_sha256": "864fde92ddef1d47da3a7435a260ce17eb3eac8a0bec789aa681377cfc5bdb1b",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/saturation.cpp",
+      "copy": "vendor/isp/sources/modules/saturation.cpp",
+      "source_sha256": "e42df3f041dffc06a4c41a53507b87352770e12db819bda8f7cef6b3ddec6023",
+      "package_sha256": "e42df3f041dffc06a4c41a53507b87352770e12db819bda8f7cef6b3ddec6023",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/chromanr.cpp",
+      "copy": "vendor/isp/sources/modules/chromanr.cpp",
+      "source_sha256": "763e409c3299ac9a50b677fdc0ad18026924837b6bbd185c4192173b2bb24355",
+      "package_sha256": "763e409c3299ac9a50b677fdc0ad18026924837b6bbd185c4192173b2bb24355",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/sharpen.cpp",
+      "copy": "vendor/isp/sources/modules/sharpen.cpp",
+      "source_sha256": "2a06560ce413cdaccb10d77ab672cb1b0684e99b728d396cfd448b73412a9749",
+      "package_sha256": "2a06560ce413cdaccb10d77ab672cb1b0684e99b728d396cfd448b73412a9749",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/bayernr.cpp",
+      "copy": "vendor/isp/sources/modules/bayernr.cpp",
+      "source_sha256": "cc266334d020fa20724a4e6711852986143c77912b9ca7c7c88d533376ffe3c2",
+      "package_sha256": "cc266334d020fa20724a4e6711852986143c77912b9ca7c7c88d533376ffe3c2",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/ygamma.cpp",
+      "copy": "vendor/isp/sources/modules/ygamma.cpp",
+      "source_sha256": "8ec43ff3406a88cd562d7aeaf0902f780027a91ef8c4421b67b77877afd9ab78",
+      "package_sha256": "8ec43ff3406a88cd562d7aeaf0902f780027a91ef8c4421b67b77877afd9ab78",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/contrast.cpp",
+      "copy": "vendor/isp/sources/modules/contrast.cpp",
+      "source_sha256": "ac4816cd9392f6619a1b420576fa895d9b11e048d57070ca0d62ed1bee727967",
+      "package_sha256": "ac4816cd9392f6619a1b420576fa895d9b11e048d57070ca0d62ed1bee727967",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/rns.cpp",
+      "copy": "vendor/isp/sources/modules/rns.cpp",
+      "source_sha256": "06b93934d8db7349935ad617e71f5094c0f7b3c5ee52026386f47ad6c927f44c",
+      "package_sha256": "06b93934d8db7349935ad617e71f5094c0f7b3c5ee52026386f47ad6c927f44c",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/lumanr.cpp",
+      "copy": "vendor/isp/sources/modules/lumanr.cpp",
+      "source_sha256": "7d3b71ccbb669b276253a19dd0383f15578b73a4fad70f9fe87da61902acc6e0",
+      "package_sha256": "7d3b71ccbb669b276253a19dd0383f15578b73a4fad70f9fe87da61902acc6e0",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/demoasic.cpp",
+      "copy": "vendor/isp/sources/modules/demoasic.cpp",
+      "source_sha256": "4ebeb9e19c3995d7340676f947aaa15cc961da35e93d97497114c59c31e2d287",
+      "package_sha256": "4ebeb9e19c3995d7340676f947aaa15cc961da35e93d97497114c59c31e2d287",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/falsecolor.cpp",
+      "copy": "vendor/isp/sources/modules/falsecolor.cpp",
+      "source_sha256": "7cce795798e5d1d866f605e6ba49e7c58b68da3441715904b287c6d774daa11f",
+      "package_sha256": "7cce795798e5d1d866f605e6ba49e7c58b68da3441715904b287c6d774daa11f",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/dpc.cpp",
+      "copy": "vendor/isp/sources/modules/dpc.cpp",
+      "source_sha256": "b22b216557e4047bbe9a6d864ff836ae2ce2f1dc939b6bf6286618f22ff0590d",
+      "package_sha256": "b22b216557e4047bbe9a6d864ff836ae2ce2f1dc939b6bf6286618f22ff0590d",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/modules/ccm.cpp",
+      "copy": "vendor/isp/sources/modules/ccm.cpp",
+      "source_sha256": "d700fe00042ad52b9af76041d8a1b6eed37101b57494a45cff50bc0107689a37",
+      "package_sha256": "d700fe00042ad52b9af76041d8a1b6eed37101b57494a45cff50bc0107689a37",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/common/common.cpp",
+      "copy": "vendor/isp/sources/common/common.cpp",
+      "source_sha256": "22bb908c342805ce4b07f89abe447a608778e8a7b9871cea615af3e1f57fae31",
+      "package_sha256": "22bb908c342805ce4b07f89abe447a608778e8a7b9871cea615af3e1f57fae31",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/common/modules.cpp",
+      "copy": "vendor/isp/sources/common/modules.cpp",
+      "source_sha256": "fe15b0986347148d168023fdd6673b40571105b5acd2a314d92f4ab2d0b38ac2",
+      "package_sha256": "fe15b0986347148d168023fdd6673b40571105b5acd2a314d92f4ab2d0b38ac2",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/srcs/sources/common/pipeline.cpp",
+      "copy": "vendor/isp/sources/common/pipeline.cpp",
+      "source_sha256": "0b56a163b0a3d2e3680e6221df3245e1cc992f7a5f123cef66a59ab76983fed8",
+      "package_sha256": "0b56a163b0a3d2e3680e6221df3245e1cc992f7a5f123cef66a59ab76983fed8",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/cyperstereo_api.h",
+      "copy": "vendor/uvc/cyperstereo_api.h",
+      "source_sha256": "98aa274e6a9c811fd1a061befc866d3614d49ab9577c3995eebb60a19fe9609c",
+      "package_sha256": "1e7500d49e7bf628a0ba1891157fce8de7e7eca4b533f128a6c29e25ef74fcfe",
+      "modification": "Removed unused OpenCV HighGUI include; algorithms unchanged."
+    },
+    {
+      "source": "src/usb/uvc/fast_isp.cc",
+      "copy": "vendor/uvc/fast_isp.cc",
+      "source_sha256": "a88717fee8581ce9725988b5593c5ff760a5a622132ba2d21ab4116fcf30098c",
+      "package_sha256": "a88717fee8581ce9725988b5593c5ff760a5a622132ba2d21ab4116fcf30098c",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/hdr_isp.h",
+      "copy": "vendor/uvc/hdr_isp.h",
+      "source_sha256": "260a26610cd4a606f0d61a526fc0649623b4a19bca779d2c5850a83a69ae9bbc",
+      "package_sha256": "260a26610cd4a606f0d61a526fc0649623b4a19bca779d2c5850a83a69ae9bbc",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/bayer_format.h",
+      "copy": "vendor/uvc/bayer_format.h",
+      "source_sha256": "f0d40be2bc6b180c4b365854dd6e62f1dce5093832e70bb51b22107c3699d27c",
+      "package_sha256": "e4cdb3d81caaae2f52c0c4092c5fb8ae7d7f634b31ae14dd4bebc907fcda5bd3",
+      "modification": "Jetson display-only CPU/CUDA extension; original default CPU processing preserved."
+    },
+    {
+      "source": "src/usb/uvc/smartsens_metadata.h",
+      "copy": "vendor/uvc/smartsens_metadata.h",
+      "source_sha256": "a4ac231e3cf34851e2880729c71b6133ebb988420923e271848bcb1b35ebb81e",
+      "package_sha256": "58524dba57b16f8d80cc9a05826f7961c5e5a81e4d517b28bf4312d3fea33925",
+      "modification": "Jetson display-only CPU/CUDA extension; original default CPU processing preserved."
+    },
+    {
+      "source": "src/usb/uvc/uvc.h",
+      "copy": "vendor/uvc/uvc.h",
+      "source_sha256": "d6a4ddc61c0ec6ae171848c620d21dd4eb598c6a8e44b1628de76604b60cd039",
+      "package_sha256": "d6a4ddc61c0ec6ae171848c620d21dd4eb598c6a8e44b1628de76604b60cd039",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/types.h",
+      "copy": "vendor/uvc/types.h",
+      "source_sha256": "e16d8efd54c3a24cef7f4bba9e1c75d7a32ef126aad734b65b843f1666738829",
+      "package_sha256": "e16d8efd54c3a24cef7f4bba9e1c75d7a32ef126aad734b65b843f1666738829",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/tic_toc.h",
+      "copy": "vendor/uvc/tic_toc.h",
+      "source_sha256": "d5d909a6f2c8b7095c2d9d82a687a99e2492882ff581b5d3925e786faff6f584",
+      "package_sha256": "d5d909a6f2c8b7095c2d9d82a687a99e2492882ff581b5d3925e786faff6f584",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/thread_priority.h",
+      "copy": "vendor/uvc/thread_priority.h",
+      "source_sha256": "f5d2493b4d4913ddd4a1e666d3993ae1c070a7b7b8ccc44d13ae2ff87b0131b3",
+      "package_sha256": "f5d2493b4d4913ddd4a1e666d3993ae1c070a7b7b8ccc44d13ae2ff87b0131b3",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/cyper_chroma_fullstream_avx2.h",
+      "copy": "vendor/uvc/cyper_chroma_fullstream_avx2.h",
+      "source_sha256": "72e52bafefea61999b94f17f0676d5dd099c1864ae4bbb0ff19ddefaa5941a5b",
+      "package_sha256": "72e52bafefea61999b94f17f0676d5dd099c1864ae4bbb0ff19ddefaa5941a5b",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/cyper_chroma_fullstream_neon.h",
+      "copy": "vendor/uvc/cyper_chroma_fullstream_neon.h",
+      "source_sha256": "34578709b77e597851f14aa63d3fe24aaa3e4b5eb2bea4cae2a3cfa584bba5a0",
+      "package_sha256": "34578709b77e597851f14aa63d3fe24aaa3e4b5eb2bea4cae2a3cfa584bba5a0",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/thirdparty/easylog/easylogging++.h",
+      "copy": "vendor/easylog/easylogging++.h",
+      "source_sha256": "ad2bc2b989ee9d476cfaf1bcaf2d4f18bf9522d0098a39a398527670fa27d660",
+      "package_sha256": "ad2bc2b989ee9d476cfaf1bcaf2d4f18bf9522d0098a39a398527670fa27d660",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/ISP/thirdparty/easylog/easylogging++.cc",
+      "copy": "vendor/easylog/easylogging++.cc",
+      "source_sha256": "411fa7dc46408491997e412d3d64ce77070756a791953d8a2782bbb53edbbf71",
+      "package_sha256": "411fa7dc46408491997e412d3d64ce77070756a791953d8a2782bbb53edbbf71",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "LICENSE",
+      "copy": "LICENSE",
+      "source_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "package_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "modification": "none (byte-for-byte copy)"
+    },
+    {
+      "source": "src/usb/uvc/cyperstereo.h",
+      "copy": "vendor/uvc/cyperstereo.h",
+      "source_sha256": "2f1c90be61eec2be86e0dcb19b6f5c59104f0283cf7d261d8390337e9a95ea1d",
+      "package_sha256": "2f1c90be61eec2be86e0dcb19b6f5c59104f0283cf7d261d8390337e9a95ea1d",
+      "modification": "none (byte-for-byte copy)"
+    }
+  ],
+  "git_head": "764ab5497789172fd5686d771dde83e8533d22cf",
+  "extracted_date": "2026-10-16",
+  "adapted_files": [
+    {
+      "file": "src/parameters.cpp",
+      "source": "camera_tuner/src/parameter_model.cpp",
+      "change": "Same schema/validation/serialization; Qt-free C++17 file IO with atomic replacement."
+    },
+    {
+      "file": "src/processor.cpp",
+      "source": "camera_tuner/src/camera_session.cpp decodeStereoTransport",
+      "change": "Pure-memory transport decoder and serialized persistent processor; no capture/Qt."
+    }
+  ],
+  "jetson_display_extension": {
+    "date": "2026-11-01",
+    "scope": "Optional CUDA live display, CPU default ABI preserved; not used for sensor/algorithm/recording data.",
+    "sources": {
+      "src/cuda_display.cu": "91427bb5725a71fe39598257122d5da9968535d562a608abe206e3fcc3b2ebff",
+      "src/cuda_display.h": "7accd391a0008701a5a060de3b7452490c808897aa460c651b393ce7a356cacc"
+    }
+  }
+}

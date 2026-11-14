@@ -1,0 +1,32 @@
+# Python and build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+build/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.so
+*.so.*
+*.a
+# Native dependency sources are versioned; installed libraries are not.
+.native/*
+!.native/src/
+.native/src/**/build/
+# Local recordings, diagnostics and installation state
+output/
+*.rrd
+*.log
+.deployment/*
+!.deployment/scripts/
+.ego2-jetson-bundle-id
+configs/*_selection.json
+.env
+.env.*
+!.env.example
+xcuserdata/
+# Downloaded assets: python3 tools/fetch_assets.py
+/models/*.task
+/vocabulary/ORBvoc.txt
+/vocabulary/*.tar.gz

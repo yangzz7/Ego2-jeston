@@ -1,0 +1,8 @@
+numpy>=1.24
+opencv-contrib-python==4.12.0.88
+PyYAML>=6.0
+mediapipe>=0.10.20,<2
+pyzmq>=25
+rerun-sdk==0.34.1
+PySide6>=6.8,<7
+-r requirements-dataset.txt

@@ -1,0 +1,21 @@
+# Auto-generated Cyperstereo S2 entry; calibration belongs to this SN.
+serial: s200032
+calibration: camchain-imucam.yaml
+imu_calibration: imu.yaml
+reference_camera: cam1
+acceleration_scale: 9.7887
+input:
+  type: cyper
+  device: auto
+  width: 1280
+  height: 1024
+  fps: 30
+  bayer: auto
+  white_balance: true
+channels:
+- camera: cam0
+  label: C1 / cam0
+  invalid_bottom_rows: 2
+- camera: cam1
+  label: C2 / cam1
+  invalid_bottom_rows: 2

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.18)
+project(ego2_gesture_preprocess LANGUAGES CXX CUDA)
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_STANDARD_REQUIRED ON)
+add_library(ego2_gesture_preprocess SHARED preprocess.cu)
+set_target_properties(ego2_gesture_preprocess PROPERTIES CUDA_RUNTIME_LIBRARY Shared)
+target_compile_options(ego2_gesture_preprocess PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-O3>)

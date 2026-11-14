@@ -1,0 +1,28 @@
+# Source: calib.io_KALIBR_500x500_6x6_55.pdf (provided separately; no runtime dependency).
+# Source SHA256: eaa8617bf3b0d058c87d15ee51a83a9a7dfb22dc603199f29f0a921335d41d12
+# Verified from PDF vector geometry and decoding all 36 tags, 2026-10-16.
+# Nominal sizes assume 100% printing; measure the printed black square before use.
+# Standard Kalibr target fields:
+target_type: aprilgrid
+tagCols: 6
+tagRows: 6
+tagSize: 0.055       # Outer black square edge, metres; excludes white margin.
+tagSpacing: 0.3     # Gap / tagSize: 16.5 mm / 55 mm (centre pitch = 71.5 mm).
+
+# Additional detection/layout metadata; ignored by Kalibr's target reader.
+dictionary: DICT_APRILTAG_36h11
+border_bits: 2
+page_size_m: [0.5, 0.5]
+# Relative to cv2.aruco.generateImageMarker, with the PDF footer upright.
+marker_rotation_deg: 180
+# Black squares fill every gutter intersection, touching the tag corners.
+corner_squares: true
+# Rows top-to-bottom, columns left-to-right in the upright PDF.
+# ID 0 is bottom-left; IDs increase to the right, then upwards.
+ids_by_row:
+  - [30, 31, 32, 33, 34, 35]
+  - [24, 25, 26, 27, 28, 29]
+  - [18, 19, 20, 21, 22, 23]
+  - [12, 13, 14, 15, 16, 17]
+  - [6, 7, 8, 9, 10, 11]
+  - [0, 1, 2, 3, 4, 5]

@@ -1,0 +1,48 @@
+target_type: aprilgrid
+tagCols: 6
+tagRows: 6
+tagSize: 0.055
+tagSpacing: 0.3
+dictionary: DICT_APRILTAG_36h11
+border_bits: 2
+page_size_m:
+- 0.5
+- 0.5
+marker_rotation_deg: 180
+ids_by_row:
+- - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+- - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+- - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+- - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+- - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+- - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5

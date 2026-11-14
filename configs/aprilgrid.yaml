@@ -1,0 +1,53 @@
+camera: ../cameras/s200032/camera.yaml
+target: ../calibration_targets/calib.io_KALIBR_500x500_6x6_55.yaml
+reference: cam1
+detection:
+  # Overlapping perspective views cover the centre and fisheye periphery.
+  views:
+    - {width: 960, height: 960, hfov: 100, yaw: 0, pitch: 0}
+    - {width: 640, height: 640, hfov: 95, yaw: -55, pitch: 0}
+    - {width: 640, height: 640, hfov: 95, yaw: 55, pitch: 0}
+    - {width: 640, height: 640, hfov: 95, yaw: 0, pitch: -50}
+    - {width: 640, height: 640, hfov: 95, yaw: 0, pitch: 50}
+  min_side_px: 12   # Measured in native fisheye pixels, not supersampled pixels.
+  corner_window_fraction: 0.16  # Local native edge length; capped by black-border width.
+  corner_window_max_px: 32
+quality:
+  max_reprojection_px: 2.5
+  min_inlier_fraction: 0.6
+  min_distance_m: 0.15
+  max_distance_m: 4.0
+  ambiguity_px: 0.15
+  ambiguity_angle_deg: 15
+tracking:
+  max_gap_s: 0.25
+  max_speed_m_s: 3.0
+  max_angular_speed_deg_s: 720
+  jump_slack_m: 0.03
+  jump_slack_deg: 15
+  detection_interval_s: 0.25  # Refresh IDs; continuous local tracking runs every frame.
+  max_flow_gap_s: 0.25
+  flow_fb_max_px: 1.2         # Forward/backward optical-flow consistency.
+  flow_error_max: 25.0
+  prediction_max_s: 0.15     # Display only; never exported as a measured pose.
+  tag_grace_s: 0.12          # Weak local appearance with a current measured board pose.
+  appearance_min_contrast: 18.0
+  appearance_max_bit_errors: 4
+viewer:
+  display_isp:
+    enabled: true         # Rerun only; detection/flow/pose keep their existing images.
+    config: auto          # cyperstereo_isp_portable/configs/<selected SN>.yaml
+    library: ../build/cyperstereo_isp/libcyperstereo_isp_c.so
+  axis_length_m: 0.025
+  memory_limit: 1GiB
+  jpeg_quality: 90
+  pose_row_share: 0.2       # Third row: camera optical poses in the board frame.
+  pose_hold_s: 0.3          # Last valid values only; never treated as measurements.
+  pose_position_decimals: 3
+  pose_angle_decimals: 1
+stereo_check:
+  enabled: true
+  sample_interval_s: 0.5   # Fresh decoded pairs only; fitting runs after capture stops.
+  max_samples: 200         # Bounded uniform reservoir across the whole session.
+  min_tags_per_eye: 4      # Also require non-collinear board coverage in each eye.
+  min_accepted_samples: 10

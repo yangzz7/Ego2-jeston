@@ -1,0 +1,5 @@
+# Independent settings for the preview-only 纯RGB画面 mode.
+# Per-camera input/channels and ISP parameters are resolved by selected SN.
+fps: 30
+max_fps: 30
+jpeg_quality: 85

@@ -1,0 +1,69 @@
+# Default launch opens a native camera-selection panel and remembers choices
+# in multi_vio_selection.json. This mapping is the fallback for --no-setup.
+mode: vio  # vio | gesture | aprilgrid | reconstruction (saved selection takes precedence)
+# Live null = disabled. A single device may use any role; 2–4 require chest.
+# Only --demo renders null roles as synthetic cameras.
+# Derived from enabled roles: the sole camera, or chest for multiple cameras.
+reference_role: auto
+devices:
+  chest:
+    sn: s200032
+  head:
+    sn: null
+  left_hand:
+    sn: null
+  right_hand:
+    sn: null
+
+aprilgrid_config: aprilgrid.yaml
+gesture_config: gesture.yaml
+reconstruction_config: reconstruction.yaml
+orb_source: ../third_party/orb_slam3
+vocabulary: ../vocabulary/ORBvoc.txt
+fps: 15
+features: 1600
+max_imu_gap: 0.05
+alignment:
+  min_samples: 20
+  min_duration_s: 2.0
+  # Jetson board results are about 2.3 Hz under VIO load; allow time to
+  # collect 20 quality stereo samples despite occasional rejected frames.
+  max_duration_s: 30.0
+  max_sample_gap_s: 2.0
+  min_tags_per_eye: 4
+  min_span_m: 0.07
+  outlier_translation_m: 0.03
+  outlier_rotation_deg: 3.0
+  min_inlier_fraction: 0.8
+  max_translation_rms_m: 0.01
+  max_rotation_rms_deg: 1.0
+timing:
+  stale_s: 0.6
+  # Historical image/pose pairs may finish board detection after live expiry.
+  # This does not extend the lifetime of a live VIO pose.
+  board_max_age_s: 2.0
+  interpolation_gap_s: 0.15
+  startup_timeout_s: 60
+viewer:
+  display_isp:
+    enabled: true
+    config: auto
+    library: auto
+    max_fps: 15
+  row_order: [head, chest, left_hand, right_hand]
+  display_order: [cam1, cam0]
+  memory_limit: 1GiB
+  jpeg_quality: 85
+  axis_length_m: 0.08
+  view_distance_m: 2.5
+  # Fraction of the left column for the three frozen relative-pose rows.
+  initial_pose_share: 0.14
+  max_trajectory_points: 20000
+  trajectory_chunk_points: 128
+  trajectory_min_distance_m: 0.002
+recording:
+  max_gib: 8
+demo:
+  # Optical model for synthetic images of unassigned roles; --demo ONLY.
+  # This setting is never used to select a physical camera in live mode.
+  calibration_sn: s200032

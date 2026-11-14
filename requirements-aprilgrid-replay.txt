@@ -1,0 +1,3 @@
+# Optional offline RRD reader; tested with rerun-sdk 0.34.1.
+# Not needed by run_aprilgrid.sh or the checked-in regression fixtures.
+datafusion==53.0.0

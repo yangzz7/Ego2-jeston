@@ -1,0 +1,3 @@
+# Recording uses FFmpeg (ffmpeg executable with libx264rgb) and the base requirements.
+pyarrow>=15
+pandas>=2

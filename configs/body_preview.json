@@ -1,0 +1,66 @@
+{
+  "max_visual_age_s": 0.65,
+  "stale_after_s": 0.5,
+  "hide_after_s": 1.5,
+  "max_clock_residual_s": 0.12,
+  "max_pose_gap_s": 0.15,
+  "roles": {
+    "head": {
+      "camera_from_body_wxyz": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mount_calibrated": true,
+      "mount_source": "user_axis_definition",
+      "axis_definition": "camera +Z: outward face/front; camera +Y: toward feet. Body +Y: toward head top; body +Z: outward face/front."
+    },
+    "chest": {
+      "camera_from_body_wxyz": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mount_calibrated": true,
+      "mount_source": "user_axis_definition",
+      "axis_definition": "camera +Z: outward chest/front; camera +Y: toward feet. Body +Y: toward head top; body +Z: outward chest/front."
+    },
+    "left_hand": {
+      "camera_from_body_wxyz": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0,
+        0
+      ],
+      "mount_calibrated": true,
+      "mount_source": "user_axis_definition",
+      "axis_definition": "camera +Z: middle finger; camera +Y: outward palm normal. Body +Y: middle finger; body +Z: back of hand."
+    },
+    "right_hand": {
+      "camera_from_body_wxyz": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0,
+        0
+      ],
+      "mount_calibrated": true,
+      "mount_source": "user_axis_definition",
+      "axis_definition": "camera +Z: middle finger; camera +Y: outward palm normal. Body +Y: middle finger; body +Z: back of hand."
+    }
+  },
+  "hand_selection": {
+    "missing_grace": 0.25,
+    "switch_hold": 0.25,
+    "evidence_gap": 0.25,
+    "switch_margin": 0.1
+  },
+  "hand_smoothing": {
+    "min_cutoff_hz": 1.8,
+    "max_cutoff_hz": 12.0,
+    "beta": 0.3,
+    "derivative_cutoff_hz": 3.0,
+    "reset_gap_s": 0.25
+  }
+}

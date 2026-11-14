@@ -1,0 +1,40 @@
+%YAML:1.0
+---
+# Initial display-only S2 tuning shared with s200032; not per-unit color calibration.
+schema_version: 1
+serial: s200097
+mode: tunable
+linked: 1
+eyes:
+  - auto_white_balance: 1
+    white_balance: [1.0, 1.0, 1.0]
+    black_level: 16.0
+    exposure_ev: 0.0
+    tone: srgb
+    gamma: 2.2
+    black_point: 6.0
+    contrast: 0.3
+    saturation: 1.0
+    bayer_denoise: 0.5
+    luma_denoise: 0.25
+    chroma_denoise: 0.5
+    false_color: 0.5
+    sharpening: 0.0
+    ccm_enabled: 0
+    ccm: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  - auto_white_balance: 1
+    white_balance: [1.0, 1.0, 1.0]
+    black_level: 16.0
+    exposure_ev: 0.0
+    tone: srgb
+    gamma: 2.2
+    black_point: 6.0
+    contrast: 0.3
+    saturation: 1.0
+    bayer_denoise: 0.5
+    luma_denoise: 0.25
+    chroma_denoise: 0.5
+    false_color: 0.5
+    sharpening: 0.0
+    ccm_enabled: 0
+    ccm: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]

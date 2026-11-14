@@ -1,0 +1,20 @@
+# Moved from configs/hand_pose.yaml; existing physical wrist tags are unchanged.
+# Historical small Kalibr tags: tag36h11, 22.5 mm outer black square, 2 black cells.
+# User-confirmed IDs; actual 3D wrist geometry still requires calibration.
+markers_configured: true
+dictionary: DICT_APRILTAG_36h11
+border_bits: 2
+targets:
+  - name: left
+    # Physical order around the wrist; 100 -> 94 is the approximate palm seam.
+    ids: [94, 95, 96, 97, 98, 99, 100]
+    size_m: 0.0225
+    palm_offset_deg: 0
+    T_wrist_endpoint: [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+    color: [70, 200, 255]
+  - name: right
+    ids: [124, 125, 126, 127, 128, 129, 130]
+    size_m: 0.0225
+    palm_offset_deg: 0
+    T_wrist_endpoint: [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+    color: [255, 180, 65]
